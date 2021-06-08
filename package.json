@@ -1,0 +1,20 @@
+{
+  "name": "divergence-bot",
+  "description": "A Madeindreams trading bot",
+  "version": "0.0.2",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Ian Decentralize",
+  "license": "MIT",
+  "homepage": ".",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "dotenv": "^8.2.0",
+    "ethers": "^5.0.24",
+    "mysql": "^2.18.1",
+    "promise": "^8.1.0",
+    "request": "^2.88.2"
+  }
+}

@@ -7,6 +7,7 @@ It make uses of the DYDX FLash Loan and a smart contract.
 
 
 ## Installation
+The bot uses a Mysql DB. You can install it and provide the logging credentials in the .env
 
 ```npm install```
 
@@ -21,11 +22,20 @@ Edit the .env file with your;
 
 You can find the contract in the './src/contracts' folder
 
-Leave 100 Wei in the contract balance
+Leave 100 Wei in the contract balance 
 
 
 ## Start
 
 ```npm start```
+
+
+Add you favorite exchanges.
+
+This bot Uses Ethers and can sign transactions.
+
+the ```run()``` function is the core.
+
+
 
 

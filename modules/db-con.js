@@ -15,7 +15,7 @@ const DBInit = async () =>{
   
   return new Promise(resolve => {
     pool.query( "SELECT * FROM information_schema.tables WHERE table_schema = 'madeindr_public' AND table_name = 'erc20' LIMIT 1", async function(err,res){
-      console.log('DB connection')
+      console.log('DB connection', err)
      if(res.length > 0){
        // we do nothing table is already created
        resolve(false)

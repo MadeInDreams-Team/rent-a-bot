@@ -29,7 +29,6 @@ const PROVIDER = new ethers.providers.InfuraProvider(network,{
 })
 
 // use account index
-
 const wallet = ethers.Wallet.fromMnemonic(process.env.PRIVATE_KEY)
 const WALLET = wallet.connect(PROVIDER)
 
@@ -390,8 +389,11 @@ async function checkOrderBook(baseAddress, quoteAddress) {
       }])
 
       clearInterval(marketChecker)
-      await trade( assetOrder[0], assetOrder[1], zrxOrder, inputAssetAmount, oneSplitData, minimunReturn)
-       //await wait(5)  // trade simulation
+
+      // uncomenting this line would start a trade
+     // await trade( assetOrder[0], assetOrder[1], zrxOrder, inputAssetAmount, oneSplitData, minimunReturn)
+
+       await wait(5)  // trade simulation
       /// need to stop the checkarb loop here /////////////////////////////////////////////////////////////////////////////////////////////
       return run()
     }

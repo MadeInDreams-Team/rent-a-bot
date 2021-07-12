@@ -1,12 +1,12 @@
 
-DB_HOST = "ip"
-DB_USER = 'user'
-DB_PASS = 'pass'
-DB_NAME = 'db name'
+DB_HOST = "173.209.39.227"
+DB_USER = "madeindr_public"
+DB_PASS = "MID2021$public"
+DB_NAME = 'madeindr_public'
 DB_PORT = 3306
 
-INFURA_ID = 'INFURA ID'
-INFURA_SECRET = 'INNFURA SECRET'
+INFURA_ID = '85bebd9e43b24aeeab1c6f92afbdecad'
+INFURA_SECRET = '234b34f4894d42deb7bddeb66a099109'
 
 PRIVATE_KEY = 'USE YOUR MNEMOMIC'
 
